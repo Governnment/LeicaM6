@@ -1,5 +1,8 @@
 html {
   font-size: 62.5%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -12,6 +15,8 @@ html {
 body {
   color: white;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -86,6 +91,7 @@ nav ul {
       -ms-flex: 1;
           flex: 1;
   list-style: none;
+  box-sizing: border-box;
 }
 
 nav #logo {
@@ -123,6 +129,7 @@ nav .order {
       grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
   -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
+  z-index: 3;
 }
 
 .showcase h2 {
@@ -131,6 +138,7 @@ nav .order {
   grid-column: 2/3;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  z-index: 4;
 }
 
 .showcase img {
@@ -148,6 +156,7 @@ nav .order {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  z-index: 3;
 }
 
 .showcase .info {
@@ -244,11 +253,13 @@ nav .order {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .soon .circle {
   z-index: -1;
 }
+
 
 .soon h2 {
   top: 25%;

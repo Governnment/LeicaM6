@@ -11,17 +11,17 @@ class Footer extends React.Component {
         <h1>Leica 2020</h1>
         <ul>
           <li>
-            <a href="youtube.com">
+            <a href="https://www.youtube.com/">
               <img src={YoutubeLogo} alt="Leica M6" />
             </a>
           </li>
           <li>
-            <a href="twitter.com">
+            <a href="https://twitter.com">
               <img src={TwitterLogo} alt="Leica M6" />
             </a>
           </li>
           <li>
-            <a href="instagram.com">
+            <a href="https://instagram.com">
               <img src={InstagramLogo} alt="Leica M6" />
             </a>
           </li>
