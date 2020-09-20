@@ -1,8 +1,13 @@
-html {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style type="text/css">
+    html {
   font-size: 62.5%;
-  width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 * {
@@ -15,8 +20,6 @@ html {
 body {
   color: white;
   font-family: "Montserrat", sans-serif;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -91,7 +94,6 @@ nav ul {
       -ms-flex: 1;
           flex: 1;
   list-style: none;
-  box-sizing: border-box;
 }
 
 nav #logo {
@@ -129,7 +131,6 @@ nav .order {
       grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
   -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
-  z-index: 3;
 }
 
 .showcase h2 {
@@ -138,7 +139,6 @@ nav .order {
   grid-column: 2/3;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  z-index: 4;
 }
 
 .showcase img {
@@ -156,7 +156,6 @@ nav .order {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  z-index: 3;
 }
 
 .showcase .info {
@@ -242,7 +241,7 @@ nav .order {
 
 .soon {
   background: radial-gradient(#525252, #131313);
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
   z-index: 0;
 }
@@ -253,16 +252,14 @@ nav .order {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  overflow: hidden;
 }
 
 .soon .circle {
   z-index: -1;
 }
 
-
 .soon h2 {
-  top: 25%;
+  top: 23%;
 }
 
 footer {
@@ -308,12 +305,10 @@ footer h1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding-right: 5rem;
   }
   nav ul li {
     margin-left: 5rem;
     margin-right: 5rem;
-    transform: translateX(-50%);
   }
   .showcase {
     -ms-grid-columns: 10% 1fr 10%;
@@ -352,7 +347,7 @@ footer h1 {
     overflow: hidden;
   }
   .soon img {
-    width: 80%;
+    width: 60%;
   }
   .soon h2 {
     font-size: 5rem;
@@ -365,102 +360,65 @@ footer h1 {
             flex: 1;
   }
 }
-
-
-
-.modal {
-  font-size: 12px;
-  color: #070707;
-}
-.modal > .header {
-  width: 100%;
-  border-bottom: 1px solid gray;
-  font-size: 22px;
-  text-align: center;
-  padding: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-.popup-button{
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  border-radius: 4rem;
-  /* #f54538 */
-   background: #f54538; 
-}
-.modal > .content {
-  width: 100%;
-  padding: 10px 5px;
-  text-align: center;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-}
-.modal > .actions {
-  width: 100%;
-  padding: 10px 5px;
-  margin: auto;
-  text-align: center;
-}
-.modal > .close {
-  cursor: pointer;
-  position: absolute;
-  display: block;
-  padding: 2px 5px;
-  line-height: 20px;
-  right: -10px;
-  top: -10px;
-  font-size: 24px;
-  background: #ffffff;
-  border-radius: 18px;
-  border: 1px solid #cfcece;
-}
-.popup-content {
-  margin: auto;
-  background: rgb(255, 255, 255);
-  width: 50%;
-  padding: 15px;
-  border-radius: 14px;
-}
-.popup-arrow {
-  color: rgb(255, 255, 255);
-}
-[role='tooltip'].popup-content {
-  width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
-}
-
-.popup-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-[data-popup='tooltip'].popup-overlay {
-  background: transparent;
-}
-
-@keyframes anvil {
-  0% {
-    transform: scale(1) translateY(0px);
-    opacity: 0;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  1% {
-    transform: scale(0.96) translateY(10px);
-    opacity: 0;
-    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-  }
-  100% {
-    transform: scale(1) translateY(0px);
-    opacity: 1;
-    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
-  }
-}
-.popup-content {
-  -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
-}
-
-@media screen and (max-width: 1200px) {
-  .popup-content {
-    width: 90%;
-  }
-  }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="nav-container">
+            <nav>
+                <h1 id="logo">Leica</h1>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a class="order" href="#seatures">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="home">
+            <div class="showcase">
+                <h2>Leica M6</h2>
+                <img src="./img/camera 1.png" alt="">
+                <div class="info">
+                    <h3>Small but powerful</h3>
+                    <p>The new Leica M6 offers 4k at 60fps, Raw Video & Full Frame Sensor</p>
+                </div>
+            </div>
+        </section>
+        <div class="features-container">
+            <section class="features">
+                <h2>Features</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./img/card1.png" alt="" srcset="">
+                        <h4>4k 60fps</h4>
+                        <p>Get those slow motions ma boi</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/card2.png" alt="" srcset="">
+                        <h4>4k 60fps</h4>
+                        <p>Get those slow motions ma boi</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/card3.png" alt="" srcset="">
+                        <h4>4k 60fps</h4>
+                        <p>Get those slow motions ma boi</p>
+                    </div>
+                </div>
+                <img class="wave" src="./img/wave.png" alt="" srcset="">
+            </section>
+        </div>
+        <section class="soon">
+            <h2>Coming soon</h2>
+            <img src="./img/camera-soon-v2.png" alt="" srcset="">
+            <img class="circle" src="./img/circle.png" alt="" srcset="">
+        </section>
+        <footer>
+            <h1>Leica 2020</h1>
+            <ul>
+                <li><a href="#"><img src="./img/yt-logo.png" alt="" srcset=""></a></li>
+                <li><a href="#"><img src="./img/twitter-logo.png" alt="" srcset=""></a></li>
+                <li><a href="#"><img src="./img/instagram-logo.png" alt="" srcset=""></a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>

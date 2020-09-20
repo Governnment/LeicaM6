@@ -10,7 +10,7 @@ import Wave from '../img/wave.png';
 
 function Features() {
     const controls = useAnimation();
-    const [ref, inView] = useInView({trackVisibility: true, delay: 500});
+    const [ref, inView] = useInView({trackVisibility: true, delay: 500, rootMargin: "250px"});
     
   
     useEffect(() => {
@@ -20,7 +20,7 @@ function Features() {
     }, [controls, inView]);
     
     return (
-      <div id="features" className="features-container">
+      <div className="features-container" id="features">
         <section className="features">
           <h2>Features</h2>
           <motion.div
@@ -30,13 +30,14 @@ function Features() {
               transition={{
                 type: "spring",
                 stiffness: 260,
-                damping: 20
+                damping: 20,
               }}
               variants={{
                 visible: { opacity: 1, x: 0, scale: 1 },
                 hidden: { opacity: 0, x: '1vh', scale: 0 }
               }}
-              className="cards">
+              className="cards"
+              >
             <div className="card">              
               <img src={Card1} alt="4k 60fps"/>
               <h4>4k 60fps</h4>
