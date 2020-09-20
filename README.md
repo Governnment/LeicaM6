@@ -6,7 +6,18 @@ A simple react app that can show your clients information of your product
 
 ### PWA Test
 
-### Website perfomanse
+[![PWA Test](https://imgur.com/TXHWx88.jpg)]()
+[![PWA Test](https://imgur.com/QrQrgCN.jpg)]()
+
+### Website performance
+
+#### Mobile
+[![perfomanse mobile](https://imgur.com/82b6GUq.jpg)]()
+[![perfomanse mobile](https://imgur.com/4hpK7xR.jpg)]()
+
+#### Desktop
+[![perfomanse desktop](https://imgur.com/Ro7IOzt.jpg)]()
+[![perfomanse desktop](https://imgur.com/PP8sIZg.jpg)]()
 
 ### A few sreenshots of website
 
