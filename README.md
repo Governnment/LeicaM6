@@ -10,6 +10,6 @@ A simple react app that can show your clients information of your product
 
 ### A few sreenshots of website
 
-[![Leica](https://imgur.com/NBiItyW)]()
+[![Leica](https://imgur.com/NBiItyW.jpg)]()
 [![Leica](https://ibb.co/f0BRYDL)]()
 [![Leica](https://ibb.co/f0BRYDL)]()
